@@ -7,7 +7,7 @@ style: |
         background: 
             linear-gradient(135deg, rgba(245, 247, 250, 0.95) 0%, rgba(195, 207, 226, 0.95) 100%),
             repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(59, 130, 246, 0.08) 40px, rgba(59, 130, 246, 0.08) 80px),
-            repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(30, 64, 175, 0.05) 40px, rgba(30, 64, 175, 0.05) 80px);
+            repeating-linear-gradient(-45deg, transparent, transparent 40px, rgba(30, 64, 175, 0.05) 40px, rgba(203, 203, 218, 1) 80px);
         background-color: #ffffff;
         color: #2c3e50;
         font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
