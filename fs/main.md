@@ -2,6 +2,7 @@
 marp: true
 theme: default
 paginate: true
+backgroundImage: url('https://marp.app/assets/hero-background.svg')
 style: |
     section {
         background: 
@@ -53,15 +54,37 @@ style: |
 ## _Dr. Stefano Balietti_  
 
 
+
+<!-- (https://marp.app/assets/marp.svg) -->
+
+
+
 ---
 
 # Warm-up 
 
+![bg left:40% 80%](https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/09/James-Bond-Daniel-Craig-007.jpg)
 
+<!-- (https://assets1.ignimgs.com/2020/10/31/0-signed-photo-of-sean-connery-posing-as-james-bond-1280x720-1604162798616.jpg)  -->
 
 **What did we learn last week?**
 
 - What is agent?
+
+---
+## Do you know this number?
+
+<span style="margin-top: 0%; font-size:400px;">404</span>
+
+---
+## What about this number?
+
+<span style="margin-top: 0%; font-size:400px;">402</span>
+
+---
+## What about this number?
+
+<div style="margin-top: 0%; font-size:400px;"><strong>x</strong>402</div>
 
 ---
 
