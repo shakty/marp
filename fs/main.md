@@ -450,22 +450,9 @@ Pay $0.01 per article read; $0.001 per API call; $0.0001 per data packet
 
 <!-- --- -->
 
-# AI + Blockchain Convergence
 
-**AI Agents Need Blockchain:**
-- Autonomous payments (no human approval)
-- Micropayment efficiency
-- Transparent accounting
-- 24/7 operation
 
-**Blockchain Needs AI:**
-- Dynamic pricing & negotiation
-- Fraud detection
-- Smart decision-making
 
-**Result:** Autonomous machine economy
-
----
 
 # x402 Protocol
 
@@ -483,137 +470,7 @@ Pay $0.01 per article read; $0.001 per API call; $0.0001 per data packet
 - Predictable costs (no volatility)
 - Sub-cent payments viable
 
----
 
-# Use Case 1: Real-Time Market Data
-
-<!-- ![bg right:40% 80%](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800) -->
-
-**Scenario:** AI trading agent needs NYSE Level 2 data
-
-**Traditional:**
-- $10k-50k/month subscription
-- Pay for nights/weekends (unused)
-- Annual contracts
-
-**With x402 + Stablecoins:**
-- Pay $0.0001 USDC per data packet
-- Usage-based: $500-2k/month
-- AI decides value per millisecond
-- Predictable costs (no volatility)
-- **ROI: 80-95% cost reduction**
-
----
-
-# Use Case 2: AI Model Training
-
-<!-- ![bg right:40% 90%](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800) -->
-
-**Scenario:** Training 70B model across 1,000 GPUs
-
-**Traditional (AWS/Azure):**
-- $3,060/hour × 1,000 GPUs
-- Minimum 1-hour billing
-- Crash at 58 min? Pay full hour
-- **48-hour cost:** ~$147k
-
-**With x402 + Stablecoins:**
-- Pay $0.00085 USDC/GPU-sec
-- Auto-migrate to cheaper GPUs
-- Exact costs (no crypto volatility)
-- **48-hour cost:** ~$110k USDC
-- **Savings: 25%+ (failures avoided)**
-
- 
-
----
-
-# Use Case 3: Research & Content
-
-![bg right:40% 80%](https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800)
-
-**Scenario:** AI scanning 10,000 academic papers
-
-**Traditional:**
-- $39.95/paper or $2k/year
-- **Total cost:** $399k (paywalls)
-- Result: AI blocked, piracy
-
-**With x402:**
-- $0.001-0.05 per paper
-- **Total cost:** $100-500
-- Authors earn 70% directly
-- **New revenue:** $30M+ for publishers
-
-**Impact:** Democratizes research access
-
----
-
-# Improved Competition across API providers
-
-<!-- ![bg right:35% 90%](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800) -->
-
-**Scenario:** Weather AI using 50 data sources
-
-**Traditional:**
-- $500-5k/month per API
-- **Total:** $25k-250k/month
-- Manual integration, contracts
-
-**x402:**
-- AI tries 50, pays 5 best
-- **$2.50 vs. $25k/month**
-- Instant access, no contracts
-
-<!-- ```javascript
-const forecast = await weatherAI.compose({
-  sources: await discoverAPIs('weather'),
-  budget: 0.50
-});
-``` -->
-
----
-
-# Economic Impact
-
-![bg right:40% 80%](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800)
-
-## Market Size
-
-- **Stablecoin market:** $180B (2024)
-- **M2M payments:** $1T+ by 2030
-- **Stablecoin transactions:** $50-100B daily
-
-## Why Stablecoins Win
-
-- Merchants accept predictable value
-- AI agents can budget accurately
-- Cross-border without forex risk
-- Programmable compliance (KYC/AML)
-
-<!-- 
-
----
-
-# Challenges & Solutions
-
-![bg right:40% 85%](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800)
-
-## Technical
-
-- **Scalability:** L2 networks, state channels
-- **Privacy:** Zero-knowledge proofs
-- **Interoperability:** Cross-chain bridges
-- **Security:** Formal verification, AI auditing
-
-## Regulatory
-
-- **AML/KYC** compliance
-- **Securities laws** (token classification)
-- **Tax reporting** challenges
-- **Frameworks:** EU MiCA, US legislation
-
--->
 
 ---
 
@@ -621,79 +478,213 @@ const forecast = await weatherAI.compose({
 
 Follow instructions in the Github repo of this lecture.
 
-<!-- ![bg right:40% 90%](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800)
-
-## Live Flow
-
-1. AI discovers API endpoint
-2. Receives **402 Payment Required**
-3. Evaluates price vs. value
-4. Opens payment channel
-5. Streams micropayments
-6. Receives real-time data
-7. Closes channel
-
-**Time:** < 2 seconds complete cycle -->
 
 ---
 
-<!-- # Real-World Examples
+# AI + Blockchain Convergence
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800)
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em;">
 
-**Circle (USDC)** - $35B stablecoin, powers payments
-**Stripe** - Added USDC payment support (2024)
-**Visa** - USDC settlement on Ethereum/Solana
-**PayPal PYUSD** - $500M stablecoin launch
-**Coil** - Web monetization with stablecoins
-**Helium** - IoT devices pay each other in stablecoins
+<div>
 
-## Why Finance Professionals Care
+**AI Agents Need Blockchain:**
+- Autonomous payments (no human approval)
+- Micropayment efficiency
+- Transparent accounting
+- 24/7 operation
 
-- **Stablecoins = new payment rails** (disrupting Swift, Visa)
-- Banks issuing own stablecoins (JPM Coin, Wells Fargo)
-- $180B market growing 15% YoY
-- Skills: stablecoin economics, regulatory frameworks
+**Blockchain Needs AI:**
+- Dynamic pricing & negotiation
+- Fraud detection
+- Smart decision-making
 
---- -->
+</div>
 
-<!-- # Investment Opportunities
+<div>
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800)
 
-## Where Money Flows
+</div>
 
-**Stablecoin Infrastructure:**
-- Circle (USDC): $5B raised, Coinbase backed
-- Tether (USDT): $120B market cap
-- L2 networks: Polygon, Base (Coinbase L2)
+</div>
 
-**Traditional Finance Entering:**
-- Visa: USDC settlement network
-- PayPal: PYUSD stablecoin
-- Stripe: Stablecoin payment processing
 
-**VC 2024:** $15B+ in stablecoin/payment infrastructure -->
 
-<!-- --- -->
+---
 
-# Summary: Key Takeaways
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800)
+# AI + Blockchain Convergence
 
-1. **Stablecoins solve crypto's volatility problem** ($180B market)
-2. **Perfect for micropayments** - predictable value + blockchain speed
-3. **HTTP 402** (1997) finally viable with stablecoins
-4. **x402 + stablecoins** = AI agents can transact autonomously
-5. **Use cases:** 80-95% cost reduction (data, compute, APIs)
-6. **Major players:** Circle, Visa, Stripe, PayPal entering
-7. **Risks:** De-pegging, regulation, centralization
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em;">
 
-## The Revolution
+<div>
 
-**Building Block:** Stablecoins provide stable value
-**Infrastructure:** Blockchain provides programmability
-**Result:** Value flows at speed of data with predictable costs
+**AI Agents Need Blockchain:**
+- Autonomous payments (no human approval)
+- Micropayment efficiency
+- Transparent accounting
+- 24/7 operation
+
+**Blockchain Needs AI:**
+- Dynamic pricing & negotiation
+- Fraud detection
+- Smart decision-making
+
+</div>
+
+<div>
+
+**Result:** 
+
+_Autonomous machine economy_
+
+<img src="./images/Tear-Down-Data-Silos-.png" />
+
+</div>
+
+</div>
+
+---
+
+
+
+# Use Case 1: AI trading agent with NYSE Level 2 data
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; margin-bottom: 1em;">
+
+<div>
+
+### Traditional
+- $10k-50k/month subscription
+- Pay for nights/weekends (unused)
+- Annual contracts
+
+</div>
+
+<div>
+
+### x402
+- Pay $0.0001 USDC per data packet
+- Usage-based: $500-2k/month
+- AI decides value per millisecond
+
+</div>
+
+</div>
+
+<div style="grid-column: 1 / -1; text-align: center; padding: 1em; background: rgba(59, 130, 246, 0.1); border-radius: 10px;">
+
+**Saving**: 80-95% cost reduction
+
+</div>
+
+---
+
+# Use Case 2: Training LLMs across 1,000 GPUs
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; margin-bottom: 1em;">
+
+<div>
+
+### Traditional (AWS/Azure)
+- $3,060/hour × 1,000 GPUs
+- Minimum 1-hour billing
+- Crash at 58 min? Pay full hour
+- 48-hour cost: ~$147k
+
+</div>
+
+<div>
+
+### x402
+- Pay $0.00085 USDC/GPU-sec
+- Auto-migrate to cheaper GPUs
+- 48-hour cost: ~$110k USDC
+
+</div>
+
+</div>
+
+<div style="grid-column: 1 / -1; text-align: center; padding: 1em; background: rgba(59, 130, 246, 0.1); border-radius: 10px;">
+
+**Saving:** 25%+ (failures avoided)
+
+</div>
+
+ 
+
+---
+
+# Use Case 3: AI scanning 10,000 academic papers
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; margin-bottom: 1em;">
+
+<div>
+
+### Traditional
+- $39.95/paper or $2k/year
+- Total cost: $399k (paywalls)
+- Result: AI blocked, piracy
+
+</div>
+
+<div>
+
+### x402
+- $0.001-0.05 per paper
+- Total cost: $100-500
+- Authors earn 70% directly
+- New revenue: $30M+ for publishers
+
+</div>
+
+</div>
+
+<div style="grid-column: 1 / -1; text-align: center; padding: 1em; background: rgba(59, 130, 246, 0.1); border-radius: 10px;">
+
+**Impact:** Democratizes research access
+
+</div>
+
+---
+
+# Systemic and Economic Impact
+
+- Improved Competition across API providers
+- Market size increase
+- New market for agents
+- Increase in stablecoin market
+- New economic usecases
+- AI agents can budget accurately
+- Cross-border without forex risk
+<!-- - Programmable compliance (KYC/AML) -->
+
+
+---
+
+
+
+# Summary and Key Takeaways
+
+<div style="margin-bottom: 1.5em;">
+
+- AI agents with **wallets** transacting in stablecoins ($308B)
+- HTTP 402 becomes x402 almost 30 years later: micropayments finally viable
+- Blockchain speed + Dollar stability = cost savings
+- Real use cases: 80-95% cost reduction (Circle, Visa, Stripe, PayPal)
+
+</div>
+
+<div style="text-align: center; padding: 1.5em; background: rgba(59, 130, 246, 0.15); border-radius: 10px; border-left: 5px solid #3b82f6;">
+Autonomous machine economy
+
+
+</div>
+
+<!-- 
+<div style="margin-top: 1em; padding-top: 1em; border-top: 2px solid rgba(59, 130, 246, 0.3);">
+
+**A new form of economic life where intelligence and value flow together, autonomously, globally, 24/7.**
+</div> -->
 
 ---
 
@@ -714,7 +705,25 @@ Follow instructions in the Github repo of this lecture.
 
 *Technical deep-dives and extended material*
 
+
 ---
+
+# Challenges & Solutions
+
+## Technical
+
+- **Scalability:** L2 networks, state channels
+- **Privacy:** Zero-knowledge proofs
+- **Interoperability:** Cross-chain bridges
+- **Security:** Formal verification, AI auditing
+
+## Regulatory
+
+- **AML/KYC** compliance
+- **Securities laws** (token classification)
+- **Tax reporting** challenges
+- **Frameworks:** EU MiCA, US legislation
+
 
 # Major Risks
 
