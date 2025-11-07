@@ -1,5 +1,5 @@
 ---
-marp: true
+marp: false
 theme: default
 paginate: true
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
@@ -55,7 +55,7 @@ style: |
     }
 ---
 
-# Lecture 4: On-chain Agentic Payments
+# Lecture 5: On-chain Agentic Micropayments
 ## _Dr. Stefano Balietti_  
 
 
@@ -91,7 +91,7 @@ A program that uses artificial intelligence models (like GPTs or other ML models
 
 ---
 
-# Refresher: Components of an AI Agent
+<!-- # Refresher: Components of an AI Agent
 
 ![width:400px](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fagent-components.6066d990.png&w=1080&q=75)
 
@@ -109,34 +109,76 @@ A program that uses artificial intelligence models (like GPTs or other ML models
 
   - Long-term memory: Persists information across sessions and tasks, supporting user personalization, context continuity, and history recall.
 
-<!-- 
+
+--- -->
+
+# Refresher: Components of an AI Agent
+
+1. **Reasoning/Generation**: Provide natural language understanding and synthesis, usually an LLMs (e.g., Llama, Claude).
+
+2. **Policy/Planner**: Structures work into actionable steps, enabling the agent to manage complex objectives, not just answer atomic queries.​
+
+3. **Tools**: Lets the agent interact with and manipulate resources outside its own knowledge for tasks requiring real-time data.​
+
+4. **Retriever**: Provides rapid, targeted access to a broader or more current body of knowledge than the LLM’s static context.
+
+---
+
+<!-- # Refresher: Components of an AI Agent
+
+![width:400px](https://www.promptingguide.ai/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fagent-components.6066d990.png&w=1080&q=75)
+
 ---
 
 # Refresher: Components of an AI Agent
 
-- **Reasoning/Generation**: LLMs (e.g., Llama, Claude) Central for natural language understanding and synthesis.
 
-- **Policy/Planner**: Structures work into actionable steps, enabling the agent to manage complex objectives, not just answer atomic queries.​
+- **Model**: GPT-4, Llama, Claude...
 
-- **Tools**: Lets the agent interact with and manipulate resources outside its own knowledge—essential for tasks requiring real-time data or actions like code execution or web search.​
+- **Tools**: External systems and interfaces the agent can interact with, such as web search, code execution environments, calculators, or image generators. 
 
--**Retriever**: Provides rapid, targeted access to a broader or more current body of knowledge than the LLM’s static context. This is essential for up-to-date information, detailed documents, or organization-specific data.​ -->
+- **Memory**:
+  - Short-term (working) memory: Maintains context within a single session or conversation for coherence and reasoning. [mem0](https://mem0.ai/blog/memory-in-agents-what-why-and-how)
+
+  - Long-term memory: Persists information across sessions and tasks, supporting user personalization, context continuity, and history recall.
+
+
+--- -->
+
+## Agent Demo from last week
+
+Follow the instructions in the Github repo of the last lecture to try it.
 
 ---
 
-## Do you know this number?
 
-<span style="margin-top: 0%; font-size:400px;">404</span>
+## What Component is Missing in our Agent?
+
 
 ---
+
+## What Component is Missing in our Agent ?
+
+
+5. **Wallet**: Allows agents to spend to acquire information, services, and goods.
+
+
+---
+
+![bg](./images/Black-Friday-2025-OG.png)
+
+---
+
+## Reflect: How would AI agents with payments change your life?
+
+
+<!-- --- -->
+
+<!-- ---
+
 ## What about this number?
 
-<span style="margin-top: 0%; font-size:400px;">402</span>
-
----
-## What about this number?
-
-<div style="margin-top: 0%; font-size:400px;"><strong>x</strong>402</div>
+<div style="margin-top: 0%; font-size:400px;"><strong>x</strong>402</div> -->
 
 <!-- ---
 
@@ -159,97 +201,151 @@ A program that uses artificial intelligence models (like GPTs or other ML models
 
 # Today's Agenda
 
-1. **The Payment Problem** & HTTP 402
+1. **The (micro)Payment Problem** - And 402
 2. **Blockchain Basics** - Why it matters
 3. **Stablecoins** - The building block of micropayments
 4. **AI + Blockchain** - The convergence
 5. **x402 Protocol** - Architecture & demo
 6. **Economics, Risks & Future**
 
+
 ---
 
-# The Payment Problem
+## Do you know this number?
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800)
+<span style="margin-top: 0%; font-size:400px;">404</span>
 
-## Current Limitations
 
-- **High fees** (2-3%), **slow settlement** (2-5 days)
-- **Geographic friction**, **no micropayments**
-- **Intermediary dependency**
+---
 
-## HTTP 402: Reserved Since 1997
+![bg](https://siteassets.pagecloud.com/web/blizzard-e86b8.gif)
+
+
+---
+## What about this number?
+
+<span style="margin-top: 0%; font-size:400px;">402</span>
+
+
+---
+## 402 Response Demo
 
 ```http
 HTTP/1.1 402 Payment Required
 ```
 
-**Why never implemented?**
-- No universal payment protocol
-- Can't scale micropayments economically
+<!-- <span style="margin-top: 0%; font-size:400px;">402</span> -->
+<a href="http://localhost:4021/paywall/">http://localhost:4031/paywall</a>
+<div style="font-size:smaller">Follow the instructions in the Github repo of this lecture to try it.</div>
 
-> *"The internet was built for information, not value"*
 
 ---
 
-# Blockchain Solves Payment Problems
+# The (micro)Payment Problem
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800)
+- Not economically viable way to send them over the Internet
+- Intermediaries charge **high fees** (2-3%) and offer **slow settlement** (2-5 days)
+- Often tied to a single **geographic** area
 
-## Traditional vs. Blockchain
+- Can't scale micropayments economically
 
-| Traditional | Blockchain (L2) |
+> Raise of the ads and pre-paid/subscription services APIs
+
+---
+
+<!-- 
+
+MAYBE ADD IMAGES OF PAYWALLS
+--- -->
+
+# Blockchain Solves (micro) Payment Problems
+
+<!-- ![width:300px](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800) -->
+<!-- 
+## Traditional vs. Blockchain -->
+
+| Traditional | Blockchain |
 |-------------|------------|
 | 2-3% fees | <0.01% fees |
 | 2-5 day settlement | Seconds |
-| Business hours | 24/7/365 |
+| Business hours* | 24/7/365 |
 | Geographic limits | Global |
 | $1+ minimum | $0.0001+ viable |
 | Intermediaries | Peer-to-peer |
-
-**Key Properties:** Decentralized, trustless, programmable, transparent
+| Static | Programmable|
 
 ---
 
 # The Volatility Problem
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800)
+![width:80%](./images/btc_eur_drop.jpg)
 
-## Crypto's Achilles Heel
+- 65% value gone in less than a month!
+- 45% in a few hours! <span style="font-size: smaller">(then recovered...)</span>
 
-**Bitcoin on Monday:** $50,000
-**Bitcoin on Friday:** $35,000 (-30%)
+<div style="font-size: smaller; text-align: center">
+<a href="https://www.reuters.com/article/us-health-coronavirus-bitcoin/bitcoin-plummets-as-cryptocurrencies-suffer-in-market-turmoil-idUSKBN20Z1GA/">
+Source</a>
+</div>
 
-**Problem for payments:**
-- Merchant receives $100 → worth $70 next day
-- Unpredictable business costs
-- Can't budget or plan
-- **Nobody wants to transact in volatile assets**
 
-> *"Blockchain solved technical problems but created an economic one"*
 
 ---
 
 # Stablecoins: The Solution
 
-![bg right:40% 85%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800)
-
 ## Cryptocurrency + Price Stability
 
 **Stablecoin:** Digital currency pegged to stable asset (usually USD)
 
-**Always:** 1 USDC = $1.00 USD
-**Always:** 1 USDT = $1.00 USD
+**Always:** 1 USDT, USDC, USDe, PYUSD = 1.00 USD
+**Always:** 1 EURC, EURI = 1.00 EUR
+**Always:** 1 JPYC = 1.00 YEN
 
-## How They Work
-
-**Fiat-backed:** Every token backed by $1 in bank (USDC, USDT)
-**Crypto-backed:** Over-collateralized with crypto (DAI)
-**Algorithmic:** Supply adjusts algorithmically (mostly failed)
 
 ---
 
-# Stablecoin Market Overview
+# How Do Stablecoins Work (Overview)
+
+1. **Fiat-backed:** Every token backed by $1 in bank in cash or t-bills (USDC, USDT)
+
+2. **Crypto-backed:** Over-collateralized with crypto (DAI/SKY)
+
+3. **Algorithmic:** Supply adjusts algorithmically (mostly failed)
+
+
+---
+
+![width:80%](./images/stablecoin_market_oct25.png)
+
+The stablecoin market hit a new all-time high in October 2025, with total market
+capitalization reaching **$308 billions** (25th consecutive month of expansion).
+
+
+---
+
+## Let's contextualize $308 billions
+
+
+| Market / Metric                          | ~Size             | ~Share|
+|------------------------------------------|------------------|-----|
+| Visa annual payment volume               | $15 trillion     | 2%  |
+| U.S. money market funds                  | $6.3 trillion    | 5%  |
+| Global remittance market (annual)        | $870 billion     | 33% |
+| Bitcoin market cap                       | $880 billion     | 35% |
+| Ethereum market cap                      | $300 billion     | 100%|
+
+---
+
+<!-- ## Let's contextualize $308 billions -->
+
+![bg width:80%](./images/nyt_elon.png)
+![bg width:80%](./images/elon.webp)
+
+
+<!-- --- -->
+
+<!-- # Stablecoin Market Overview
 
 ![bg right:40% 80%](https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800)
 
@@ -266,15 +362,15 @@ HTTP/1.1 402 Payment Required
 | USDT (Tether) | $120B | Fiat |
 | USDC (Circle) | $35B | Fiat |
 | DAI (MakerDAO) | $5B | Crypto |
-| BUSD (Binance) | Discontinued | Fiat |
+| BUSD (Binance) | Discontinued | Fiat | -->
 
----
+<!-- --- -->
 
-# Why Stablecoins Matter for Payments
+<!-- # Why Stablecoins Matter for Payments
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800)
+<!-- ![bg right:40% 80%](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800) -->
 
-## Combining Best of Both Worlds
+<!-- ## Combining Best of Both Worlds
 
 **From Blockchain:**
 - Fast settlement (seconds)
@@ -288,9 +384,9 @@ HTTP/1.1 402 Payment Required
 - Predictable value
 - Familiar unit of account
 
-**Result:** Perfect for micropayments & machine economies
+**Result:** Perfect for micropayments & machine economies --> -->
 
----
+<!-- ---
 
 # Stablecoin Use Cases Today
 
@@ -307,33 +403,31 @@ HTTP/1.1 402 Payment Required
 ## 3. **Emerging Market Inflation Hedge**
 - Argentina (140% inflation) → USDT adoption
 - Turkey, Lebanon, Venezuela
-- Access to USD without bank account
+- Access to USD without bank account -->
 
 ---
 
 # Stablecoins Enable Micropayments
 
-![bg right:40% 85%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800)
+<!-- ![bg right:40% 85%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800) -->
 
-## Why Perfect Match
+<!-- ## Why Perfect Match -->
 
 **Problem:** Can't send $0.001 via Visa/PayPal
 - Minimum fees make it uneconomical
 - Settlement overhead too high
 
-**Solution:** Stablecoins + Layer 2
-- Send $0.0001 with $0.000001 fee
+**Solution:** Stablecoins on high-throughput blockchains.
+- Send $0.001 with >$0.000001 fee
 - Instant settlement
 - No intermediaries
 
-**Example:**
-Pay $0.01 per article read
-Pay $0.001 per API call
-Pay $0.0001 per data packet
+**Examples:**
+Pay $0.01 per article read; $0.001 per API call; $0.0001 per data packet
 
 ---
 
-# Regulatory Status of Stablecoins
+<!-- # Regulatory Status of Stablecoins
 
 ![bg right:40% 80%](https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800)
 
@@ -352,15 +446,11 @@ Pay $0.0001 per data packet
 **Risks:**
 - De-pegging events (USDC briefly $0.88 in 2023)
 - Regulatory uncertainty
-- Centralization concerns
+- Centralization concerns -->
 
----
+<!-- --- -->
 
 # AI + Blockchain Convergence
-
-![bg right:40% 90%](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800)
-
-## Why They Need Each Other
 
 **AI Agents Need Blockchain:**
 - Autonomous payments (no human approval)
@@ -377,20 +467,16 @@ Pay $0.0001 per data packet
 
 ---
 
-# x402 Protocol Architecture
+# x402 Protocol
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800)
+![bg right:40% 80%](./images/coinbase-x402.png)
 
-## How It Works
-
-1. **Request** → Client requests resource
-2. **402 Response** → Server: "$0.001 required"
-3. **Payment** → Client pays USDC/stablecoin
-4. **Verification** → Smart contract validates
-5. **Access** → Resource delivered
-6. **Stream** → Continuous micropayments
-
-**Powered by:** Stablecoins (USDC) on L2 networks
+1. **Request**: Client requests resource
+2. **402 Response**: $0.001 required
+3. **Payment**: Client pays stablecoin
+4. **Verification**: Smart contract validates
+5. **Access**: Resource delivered
+<!-- 6. **Stream**: Continuous micropayments -->
 
 **Key Features:** 
 - Sub-second latency
@@ -401,7 +487,7 @@ Pay $0.0001 per data packet
 
 # Use Case 1: Real-Time Market Data
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800)
+<!-- ![bg right:40% 80%](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800) -->
 
 **Scenario:** AI trading agent needs NYSE Level 2 data
 
@@ -421,7 +507,7 @@ Pay $0.0001 per data packet
 
 # Use Case 2: AI Model Training
 
-![bg right:40% 90%](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800)
+<!-- ![bg right:40% 90%](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800) -->
 
 **Scenario:** Training 70B model across 1,000 GPUs
 
@@ -438,7 +524,7 @@ Pay $0.0001 per data packet
 - **48-hour cost:** ~$110k USDC
 - **Savings: 25%+ (failures avoided)**
 
-<!-- 
+ 
 
 ---
 
@@ -463,9 +549,9 @@ Pay $0.0001 per data packet
 
 ---
 
-# Use Case 4: API Economy
+# Improved Competition across API providers
 
-![bg right:35% 90%](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800)
+<!-- ![bg right:35% 90%](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800) -->
 
 **Scenario:** Weather AI using 50 data sources
 
@@ -479,14 +565,12 @@ Pay $0.0001 per data packet
 - **$2.50 vs. $25k/month**
 - Instant access, no contracts
 
-```javascript
+<!-- ```javascript
 const forecast = await weatherAI.compose({
   sources: await discoverAPIs('weather'),
   budget: 0.50
 });
-```
-
--->
+``` -->
 
 ---
 
@@ -535,7 +619,9 @@ const forecast = await weatherAI.compose({
 
 # Demo: x402 in Action
 
-![bg right:40% 90%](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800)
+Follow instructions in the Github repo of this lecture.
+
+<!-- ![bg right:40% 90%](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800)
 
 ## Live Flow
 
@@ -547,45 +633,11 @@ const forecast = await weatherAI.compose({
 6. Receives real-time data
 7. Closes channel
 
-**Time:** < 2 seconds complete cycle
+**Time:** < 2 seconds complete cycle -->
 
 ---
 
-# Demo Code Example
-
-```javascript
-// x402 Payment Flow with Stablecoins
-class AIAgent {
-  async accessResource(url) {
-    let response = await fetch(url);
-    
-    // Handle 402 Payment Required
-    if (response.status === 402) {
-      const { price, address } = await response.json();
-      // price: "0.001" (USDC)
-      
-      // Evaluate & pay with USDC stablecoin
-      if (this.shouldPay(price)) {
-        const payment = await this.usdcWallet.pay({
-          to: address,
-          amount: price,  // Predictable $0.001 cost
-          currency: 'USDC'
-        });
-        
-        // Retry with payment proof
-        response = await fetch(url, {
-          headers: { 'X-Payment-Proof': payment.hash }
-        });
-      }
-    }
-    return response;
-  }
-}
-```
-
----
-
-# Real-World Examples
+<!-- # Real-World Examples
 
 ![bg right:40% 80%](https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800)
 
@@ -603,9 +655,9 @@ class AIAgent {
 - $180B market growing 15% YoY
 - Skills: stablecoin economics, regulatory frameworks
 
----
+--- -->
 
-# Investment Opportunities
+<!-- # Investment Opportunities
 
 ![bg right:40% 80%](https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800)
 
@@ -621,13 +673,52 @@ class AIAgent {
 - PayPal: PYUSD stablecoin
 - Stripe: Stablecoin payment processing
 
-**VC 2024:** $15B+ in stablecoin/payment infrastructure
+**VC 2024:** $15B+ in stablecoin/payment infrastructure -->
+
+<!-- --- -->
+
+# Summary: Key Takeaways
+
+![bg right:40% 80%](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800)
+
+1. **Stablecoins solve crypto's volatility problem** ($180B market)
+2. **Perfect for micropayments** - predictable value + blockchain speed
+3. **HTTP 402** (1997) finally viable with stablecoins
+4. **x402 + stablecoins** = AI agents can transact autonomously
+5. **Use cases:** 80-95% cost reduction (data, compute, APIs)
+6. **Major players:** Circle, Visa, Stripe, PayPal entering
+7. **Risks:** De-pegging, regulation, centralization
+
+## The Revolution
+
+**Building Block:** Stablecoins provide stable value
+**Infrastructure:** Blockchain provides programmability
+**Result:** Value flows at speed of data with predictable costs
+
+---
+
+# Thank You!
+
+## Questions & Discussion?
+
+**Additional Resources:**
+- Course materials: [link]
+- Research papers: [link]
+- Code examples: [link]
+
+---
+
+# Backup Slides
+
+## For Additional Questions
+
+*Technical deep-dives and extended material*
 
 ---
 
 # Major Risks
 
-![bg right:40% 90%](https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800)
+<!-- ![bg right:40% 90%](https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800) -->
 
 **Stablecoin-Specific Risks:**
 - **De-pegging:** USDC fell to $0.88 (2023, SVB crisis)
@@ -669,49 +760,4 @@ class AIAgent {
 **Academic:** Journal of Blockchain Research, BIS papers on stablecoins
 
 ---
-
-# Summary: Key Takeaways
-
-![bg right:40% 80%](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800)
-
-1. **Stablecoins solve crypto's volatility problem** ($180B market)
-2. **Perfect for micropayments** - predictable value + blockchain speed
-3. **HTTP 402** (1997) finally viable with stablecoins
-4. **x402 + stablecoins** = AI agents can transact autonomously
-5. **Use cases:** 80-95% cost reduction (data, compute, APIs)
-6. **Major players:** Circle, Visa, Stripe, PayPal entering
-7. **Risks:** De-pegging, regulation, centralization
-
-## The Revolution
-
-**Building Block:** Stablecoins provide stable value
-**Infrastructure:** Blockchain provides programmability
-**Result:** Value flows at speed of data with predictable costs
-
----
-
-# Thank You!
-
-## Questions & Discussion
-
-**Contact:**
-Dr. Stefano Balietti
-[Email address]
-[Office hours]
-
-**Additional Resources:**
-- Course materials: [link]
-- Research papers: [link]
-- Code examples: [link]
-
-**Next Lecture:**
-Decentralized Finance (DeFi) and Smart Contract Security
-
----
-
-# Backup Slides
-
-## For Additional Questions
-
-*Technical deep-dives and extended material*
 
