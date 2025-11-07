@@ -539,6 +539,8 @@ _Autonomous machine economy_
 
 <img src="./images/Tear-Down-Data-Silos-.png" />
 
+<span style="font-size: smaller"><a href="https://www.deeplearning.ai/the-batch/issue-326/">Source</a>
+
 </div>
 
 </div>
