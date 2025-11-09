@@ -453,10 +453,10 @@ Pay $0.01 per article read; $0.001 per API call; $0.0001 per data packet
 5. **Access**: Resource delivered
 <!-- 6. **Stream**: Continuous micropayments -->
 
-**Key Features:** 
+<!-- **Key Features:** 
 - Sub-second latency
 - Predictable costs (no volatility)
-- Sub-cent payments viable
+- Sub-cent payments viable -->
 
 
 
@@ -648,7 +648,12 @@ _Autonomous machine economy_
 </div>
 
 ---
-# A Market Transformation
+# Outlook: A Market Transformation
+
+- HTTP 402 becomes x402 almost 30 years later: micropayments finally viable
+
+<div style="margin-bottom: 1.5em;">
+
 
 <!-- - **Stablecoin Growth:** Accelerates $308B → $1T+ market -->
 - **API Economy 2.0:** Competition shifts from subscription models to per-use pricing
@@ -657,38 +662,13 @@ _Autonomous machine economy_
 - **Smart Budgeting:** AI agents track spending in real-time with stable currency
 
 
-<!-- **Operational Benefits** -->
-
-<!-- - **Zero Forex Risk:** Cross-border payments at domestic costs
-- **24/7 Settlement:** No banking hours, instant global transactions
-- **Programmable Compliance:** KYC/AML embedded in smart contracts -->
-
----
-
-
-
-# Summary and Key Takeaways
-
-<div style="margin-bottom: 1.5em;">
-
-- AI agents with **wallets** transacting in stablecoins ($308B)
-- HTTP 402 becomes x402 almost 30 years later: micropayments finally viable
-- Blockchain speed + Dollar stability = cost savings
-- Real use cases: 80-95% cost reduction (Circle, Visa, Stripe, PayPal)
 
 </div>
 
 <div style="text-align: center; padding: 1.5em; background: rgba(59, 130, 246, 0.15); border-radius: 10px; border-left: 5px solid #3b82f6;">
 Autonomous machine economy
-
-
 </div>
 
-<!-- 
-<div style="margin-top: 1em; padding-top: 1em; border-top: 2px solid rgba(59, 130, 246, 0.3);">
-
-**A new form of economic life where intelligence and value flow together, autonomously, globally, 24/7.**
-</div> -->
 
 ---
 
@@ -697,9 +677,21 @@ Autonomous machine economy
 ## Questions & Discussion?
 
 **Additional Resources:**
-- Course materials: [link]
-- Research papers: [link]
-- Code examples: [link]
+- Course materials: [link](#)
+- Research papers: [link](#)
+- Code examples: [link](#)
+
+---
+
+# Home Assignment
+
+- Our x402 crypto agent is great, it finds the cheapest price for cryptocurrency information. _Maybe someone else would like to use it..._
+
+- Take on this business opportunity and expose its service via an x402 request.
+
+- Accept payments on Base Sepolia.
+
+- Publish the address on the course's discussion forum for other people to try it out.
 
 ---
 
@@ -722,24 +714,8 @@ Autonomous machine economy
 
 ---
 
-# Challenges & Solutions
 
-## Technical
-
-- **Scalability:** L2 networks, state channels
-- **Privacy:** Zero-knowledge proofs
-- **Interoperability:** Cross-chain bridges
-- **Security:** Formal verification, AI auditing
-
-## Regulatory
-
-- **AML/KYC** compliance
-- **Securities laws** (token classification)
-- **Tax reporting** challenges
-- **Frameworks:** EU MiCA, US legislation
-
-
-# Major Risks
+# Major Risks (1/2)
 
 <!-- ![bg right:40% 90%](https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800) -->
 
@@ -752,6 +728,10 @@ Autonomous machine economy
 **Technical:**
 - Smart contract bugs: $3.8B lost (2022-23)
 - Network congestion on L1 (L2 solves this)
+
+---
+
+# Major Risks (2/2)
 
 **Regulatory:**
 - US: Pending stablecoin legislation
@@ -766,7 +746,7 @@ Autonomous machine economy
 
 # Research Opportunities
 
-![bg right:40% 80%](https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800)
+<!-- ![bg right:40% 80%](https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800) -->
 
 ## Open Questions
 
@@ -776,11 +756,6 @@ Autonomous machine economy
 4. **Regulatory design** - Balancing innovation & consumer protection
 5. **Cross-border flows** - Impact on monetary policy
 
-## Resources
-
-**Stablecoins:** Circle.com, Tether.to, MakerDAO
-**Technical:** Ethereum.org, Base.org (Coinbase L2)
-**Academic:** Journal of Blockchain Research, BIS papers on stablecoins
 
 ---
 
@@ -817,6 +792,4 @@ Autonomous machine economy
 - Privacy-preserving smart contracts
 - Layer 2 solutions with selective disclosure
 
-
----
 
