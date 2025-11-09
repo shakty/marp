@@ -304,6 +304,18 @@ Source</a>
 
 ---
 
+
+# How Do Stablecoins Work (Overview)
+
+1. **Fiat-backed:** Every token backed by $1 in bank in cash or t-bills (USDC, USDT)
+
+2. **Crypto-backed:** Over-collateralized with crypto (DAI/SKY)
+
+3. **Algorithmic:** Supply adjusts algorithmically (mostly failed)
+
+---
+
+
 ![width:80%](./images/stablecoin_market_oct25.png)
 
 The stablecoin market hit a new all-time high in October 2025, with total market
@@ -331,68 +343,6 @@ capitalization reaching **$308 billions** (25th consecutive month of expansion).
 ![bg width:80%](./images/elon.webp)
 
 
-<!-- --- -->
-
-<!-- # Stablecoin Market Overview
-
-![bg right:40% 80%](https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800)
-
-## Market Size (2024)
-
-- **Total market cap:** $180B+
-- **Daily volume:** $50-100B
-- **Growth:** 15% YoY
-
-## Top Stablecoins
-
-| Coin | Market Cap | Backing |
-|------|-----------|---------|
-| USDT (Tether) | $120B | Fiat |
-| USDC (Circle) | $35B | Fiat |
-| DAI (MakerDAO) | $5B | Crypto |
-| BUSD (Binance) | Discontinued | Fiat | -->
-
-<!-- --- -->
-
-<!-- # Why Stablecoins Matter for Payments
-
-<!-- ![bg right:40% 80%](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800) -->
-
-<!-- ## Combining Best of Both Worlds
-
-**From Blockchain:**
-- Fast settlement (seconds)
-- Low fees (<$0.01)
-- 24/7/365 availability
-- Global reach
-- Programmable
-
-**From Fiat:**
-- Price stability
-- Predictable value
-- Familiar unit of account
-
-**Result:** Perfect for micropayments & machine economies --> -->
-
-<!-- ---
-
-# Stablecoin Use Cases Today
-
-## 1. **Cross-Border Remittances**
-- Traditional: 7% fee, 3-5 days
-- Stablecoins: 0.1% fee, minutes
-- **Market:** $700B annually
-
-## 2. **DeFi & Trading**
-- On/off ramp for crypto trading
-- Yield generation (5-8% APY)
-- Lending/borrowing collateral
-
-## 3. **Emerging Market Inflation Hedge**
-- Argentina (140% inflation) → USDT adoption
-- Turkey, Lebanon, Venezuela
-- Access to USD without bank account -->
-
 ---
 
 # Stablecoins Enable Micropayments
@@ -414,31 +364,6 @@ capitalization reaching **$308 billions** (25th consecutive month of expansion).
 Pay $0.01 per article read; $0.001 per API call; $0.0001 per data packet
 
 ---
-
-<!-- # Regulatory Status of Stablecoins
-
-![bg right:40% 80%](https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800)
-
-## Growing Acceptance
-
-**US:**
-- Circle (USDC): Regulated, audited reserves
-- Proposed stablecoin legislation (2024)
-- Fed exploring digital dollar
-
-**EU:**
-- MiCA regulation (2024): Clear framework
-- Stablecoins must hold reserves 1:1
-- Consumer protection rules
-
-**Risks:**
-- De-pegging events (USDC briefly $0.88 in 2023)
-- Regulatory uncertainty
-- Centralization concerns -->
-
-<!-- --- -->
-
-
 
 
 
@@ -691,7 +616,7 @@ Autonomous machine economy
 
 - Accept payments on Base Sepolia.
 
-- Publish the address on the course's discussion forum for other people to try it out.
+- _Optional_: Publish the address on the course's discussion forum for other people to try it out.
 
 ---
 
@@ -699,18 +624,26 @@ Autonomous machine economy
 
 ## For Additional Questions
 
-*Technical deep-dives and extended material*
+*Technical and extended material*
 
 
 ---
 
-# How Do Stablecoins Work (Overview)
 
-1. **Fiat-backed:** Every token backed by $1 in bank in cash or t-bills (USDC, USDT)
 
-2. **Crypto-backed:** Over-collateralized with crypto (DAI/SKY)
+# Stablecoin Use Cases Today
 
-3. **Algorithmic:** Supply adjusts algorithmically (mostly failed)
+1. **Cross-Border Remittances**
+- Traditional: 7% fee, 3-5 days
+- Stablecoins: 0.1% fee, minutes
+
+2. **DeFi & Trading**
+- Yield generation (5-8% APY)
+- Lending/borrowing collateral
+
+3. **Emerging Market Inflation Hedge**
+- Argentina (140% inflation) → USDT adoption
+- Access to USD without bank account 
 
 ---
 
