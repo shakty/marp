@@ -302,18 +302,6 @@ Source</a>
 **Always:** 1 EURC, EURI = 1.00 EUR
 **Always:** 1 JPYC = 1.00 YEN
 
-
----
-
-# How Do Stablecoins Work (Overview)
-
-1. **Fiat-backed:** Every token backed by $1 in bank in cash or t-bills (USDC, USDT)
-
-2. **Crypto-backed:** Over-collateralized with crypto (DAI/SKY)
-
-3. **Algorithmic:** Supply adjusts algorithmically (mostly failed)
-
-
 ---
 
 ![width:80%](./images/stablecoin_market_oct25.png)
@@ -476,8 +464,20 @@ Pay $0.01 per article read; $0.001 per API call; $0.0001 per data packet
 
 # Demo: x402 in Action
 
+
+<a href="http://localhost:4021/crypto/market-chart?currency=bitcoin&days=7">Request financial data data over x402</a>
 Follow instructions in the Github repo of this lecture.
 
+
+---
+
+# Demo: x402 in Action
+
+
+<a href="http://localhost:4021/crypto/market-chart?currency=bitcoin&days=7">Request financial data over x402</a>
+Follow instructions in the Github repo of this lecture.
+
+Check transactions on [Base Scan](https://sepolia.basescan.org/address/0xfE49a4042D3E19970c146d5BB3177e6dfC6c983c#tokentxns)
 
 ---
 
@@ -648,18 +648,20 @@ _Autonomous machine economy_
 </div>
 
 ---
+# A Market Transformation
 
-# Systemic and Economic Impact
+<!-- - **Stablecoin Growth:** Accelerates $308B → $1T+ market -->
+- **API Economy 2.0:** Competition shifts from subscription models to per-use pricing
+- **Data Democratization:** Paywalls become pay-per-view (90% cost reduction)
+- **Agent Markets:** New $10B+ market for AI-to-AI commerce
+- **Smart Budgeting:** AI agents track spending in real-time with stable currency
 
-- Improved Competition across API providers
-- Market size increase
-- New market for agents
-- Increase in stablecoin market
-- New economic usecases
-- AI agents can budget accurately
-- Cross-border without forex risk
-<!-- - Programmable compliance (KYC/AML) -->
 
+<!-- **Operational Benefits** -->
+
+<!-- - **Zero Forex Risk:** Cross-border payments at domestic costs
+- **24/7 Settlement:** No banking hours, instant global transactions
+- **Programmable Compliance:** KYC/AML embedded in smart contracts -->
 
 ---
 
@@ -707,6 +709,16 @@ Autonomous machine economy
 
 *Technical deep-dives and extended material*
 
+
+---
+
+# How Do Stablecoins Work (Overview)
+
+1. **Fiat-backed:** Every token backed by $1 in bank in cash or t-bills (USDC, USDT)
+
+2. **Crypto-backed:** Over-collateralized with crypto (DAI/SKY)
+
+3. **Algorithmic:** Supply adjusts algorithmically (mostly failed)
 
 ---
 
@@ -769,6 +781,42 @@ Autonomous machine economy
 **Stablecoins:** Circle.com, Tether.to, MakerDAO
 **Technical:** Ethereum.org, Base.org (Coinbase L2)
 **Academic:** Journal of Blockchain Research, BIS papers on stablecoins
+
+---
+
+
+# Algorithmic Bias in Autonomous Payments
+
+**The Risk:**
+- AI agents making payment decisions inherit biases from training data
+- Could lead to discriminatory pricing or service denial
+
+**Example:** Trading AI pays more for data from certain providers based on biased historical patterns
+
+**Mitigation:**
+- Model explainability & bias testing frameworks
+- Human oversight for high-stakes decisions
+- EU AI Act: Algorithmic accountability requirements
+
+
+---
+
+# Ethical Considerations: Privacy vs. Transparency
+
+<!-- ![bg right:40% 80%](https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=800) -->
+
+<!-- ## The Blockchain Paradox -->
+
+**The Tension:**
+- Blockchain = transparent, auditable transactions
+- Privacy = GDPR "right to erasure," financial confidentiality
+- Stablecoin payments create permanent public records
+
+**Solutions:**
+- Zero-knowledge proofs (private yet verifiable)
+- Privacy-preserving smart contracts
+- Layer 2 solutions with selective disclosure
+
 
 ---
 
