@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <defs>
+    <!-- TEXT gradient: primary -> accent -> primary -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8745E"/>
+      <stop offset="50%" stop-color="#9CAF8A"/>
+      <stop offset="100%" stop-color="#B8745E"/>
+    </linearGradient>
+
+    <!-- BORDER gradient -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C78366"/>
+      <stop offset="100%" stop-color="#A45F48"/>
+    </linearGradient>
+
+    <!-- subtle text shadow -->
+    <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded badge outline -->
+  <rect
+    x="180"
+    y="100"
+    width="240"
+    height="100"
+    rx="20"
+    ry="20"
+    fill="none"
+    stroke="url(#borderGradient)"
+    stroke-width="3"
+  />
+
+  <!-- Logo text, nudged slightly LOWER for visual centering -->
+  <text
+    x="300"
+    y="158"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Montserrat,system-ui,sans-serif"
+    font-size="72"
+    font-weight="900"
+    letter-spacing="-0.03em"
+    fill="url(#textGradient)"
+    filter="url(#textShadow)"
+  >
+    Akku
+  </text>
+</svg>

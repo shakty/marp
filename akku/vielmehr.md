@@ -5,42 +5,64 @@ class: lead
 paginate: true
 backgroundColor: #f8f8f8
 style: |
-  section {
-    font-family: "Inter", sans-serif;
-  }
+    @import url("../_css/style1.css");
 ---
 
-# **Akku**
-### Digitale Infrastruktur für lokale Wirtschaft und Gemeinschaft  
+<!-- _class: lead -->
+
+<style scoped>
+h1 {
+    font-size: 5em;
+}
+</style>
+#
+<!-- Uncomment the logo below to use the Akku SVG logo instead of the text title on the first slide.
+You can enable either the Markdown image or the HTML <img> tag depending on your needs. -->
+
+<!-- ![Akku Logo](./images/akku.svg){width=60%} -->
+
+<img src="./images/border-logo.svg" alt="Akku Logo" style="width:60%; margin:0 auto; display:block; box-shadow: 0px 0px !important" />
+
+<!-- Original H1 (commented out while logo is preferred) -->
+<!-- # Akku -->
+## Energie für lokale Gemeinschaften.
+<!-- Digitale Infrastruktur für lokale Wirtschaft und Gemeinschaft   -->
 #### Präsentation für das *vielmehr*-Programm – Heidelberg
 
+Dr. Stefano Balietti
+
 ---
 
-## **Über den Gründer – Stefano Balietti**
+## Dr. Stefano Balietti
 
-👋 **Dr. Stefano Balietti**  
 Gründer von **Akku** | Forscher & Civic-Technologist  
 
 - Promotion in **Computational Social Science (ETH Zürich)**  
-- Forschungserfahrung an **Harvard, MIT, Max-Planck-Institut, Uni Mannheim & Heidelberg**  
+- Forschungserfahrung an **Harvard, Microsoft, Northeastern (Boston), Uni Mannheim & Heidelberg**  
 - Gründer mehrerer Open-Source- und Civic-Tech-Projekte (z. B. *EduCERT*, *nodeGame*)  
 - Forschung zu **Vertrauen, Partizipation und digitalen Gemeingütern**  
 
-> *„Digitale Infrastruktur sollte Menschen und lokale Gemeinschaften stärken – nicht Plattformen.“*
+<!-- > *„Digitale Infrastruktur sollte Menschen und lokale Gemeinschaften stärken – nicht Plattformen.“* -->
 
 ---
 
-## **1. Vision**
+## **Vision**
 
 > **Energie für lokale Wirtschaft und Gemeinschaft.**
 
-Akku verbindet **digitale Zahlungen, lokale Loyalität und soziale Teilhabe**.  
-Wir schaffen eine Plattform, die Städte, Bürger:innen und kleine Unternehmen digital stärkt –  
-ein Beitrag zu nachhaltigen, resilienten Stadtökosystemen.
+- Akku verbindet **digitale Zahlungen, lokale Loyalität und soziale Teilhabe**.  
+
+
+Wir schaffen eine Plattform, die Städte, Bürger:innen und kleine Unternehmen digital stärkt
+
+- Ein Beitrag zu nachhaltigen, resilienten Stadtökosystemen.
 
 ---
 
-## **2. Problem**
+## **Problem**
+
+
+
 
 - **Kleine Unternehmen (KMU)** sind Rückgrat der Wirtschaft, aber:  
   - Hohe Zahlungsgebühren (1,5–3 %)  
@@ -49,18 +71,53 @@ ein Beitrag zu nachhaltigen, resilienten Stadtökosystemen.
 
 - **Bürger:innen** wünschen sich lokale Angebote, aber finden sie digital kaum.  
 
-- **Kommunen** brauchen Werkzeuge, um Teilhabe und lokale Wirtschaft zu fördern.
+ **Kommunen** brauchen Werkzeuge, um Teilhabe und lokale Wirtschaft zu fördern.
+ 
+ ---
+ 
+ # Altstadt
+ 
+ ![center:80% 60%](./images/altstadt.webp)
+ 
+ ---
+ 
+ ## Aber warum nur socken Laden? 
+ <span style="font-size: 20px">(Hat mein Bruder gesagt bei letzten besuch)</span>
+ 
+ <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1em; align-items: top; margin-top: 0em;">
+ 
+ <img src="./images/socks1.webp" alt="Socken 1" style="width:100%; border-radius:12px; box-shadow: 0 6px 16px rgba(0,0,0,0.08);" />
+ 
+ <img src="./images/socks2.webp" alt="Socken 2" style="width:65%; border-radius:12px; box-shadow: 0 6px 16px rgba(0,0,0,0.08);" />
+ 
+ <!-- <img src="./images/socks3.webp" alt="Socken 3" style="width:50%; border-radius:12px; box-shadow: 0 6px 16px rgba(0,0,0,0.08);" />
+ 
+ <img src="./images/socks4.webp" alt="Socken 4" style="width:50%; border-radius:12px; box-shadow: 0 6px 16px rgba(0,0,0,0.08);" /> -->
+ 
+ </div>
+ 
+ ---
+ 
+ ## **Die Lösung: Akku**
+ 
+ Eine **mobile App für lokale Wirtschaftsförderung und Gemeinschaftsbildung.**
+ 
+ <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; margin-top: 1em;">
 
----
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; margin-top: 1em;">
 
-## **3. Die Lösung: Akku**
+<div>
 
-Akku ist eine **mobile App für lokale Wirtschaftsförderung und Gemeinschaftsbildung.**
+
 
 ### Für Bürger:innen  
 - Einfaches, gebührenfreies Bezahlen  
 - Bonusprogramme & Gemeinschaftsziele  
-- Unterstützung lokaler Geschäfte durch „Aufladen“
+- Unterstützung lokaler Geschäfte durch „Aufladen"
+
+</div>
+
+<div>
 
 ### Für Unternehmen  
 - Sofortige Liquidität durch Prepaid-Zahlungen  
@@ -68,9 +125,13 @@ Akku ist eine **mobile App für lokale Wirtschaftsförderung und Gemeinschaftsbi
 - Automatisierte Loyalitätsprogramme  
 - Sichtbarkeit in der lokalen Akku-Community
 
+</div>
+
+</div>
+
 ---
 
-## **4. Wie Akku funktioniert**
+## **Wie Akku funktioniert**
 
 1. **Kund:innen “laden” ihr Lieblingsgeschäft auf** – wie ein digitales Guthaben.  
 2. **Das Geschäft erhält sofort Liquidität** und kann Boni oder gemeinsame Ziele definieren.  
@@ -81,7 +142,7 @@ Akku ist eine **mobile App für lokale Wirtschaftsförderung und Gemeinschaftsbi
 
 ---
 
-## **5. Technische Innovation**
+## **Technische Innovation**
 
 - **Open Banking**: 95 % geringere Transaktionskosten als Kreditkarten  
 - **Kryptographische Identitäten**: sicher, zukunftsfähig, nicht fälschbar  
@@ -92,7 +153,7 @@ Technologie aus dem Forschungsprojekt **EduCERT (Uni Mannheim)** – Blockchain-
 
 ---
 
-## **6. Soziale Innovation**
+## **Soziale Innovation**
 
 - Vom **individuellen Punktesammeln** zur **kollektiven Belohnung**  
 - Motivation durch **soziale Ziele & Gamification**  
@@ -103,7 +164,7 @@ Technologie aus dem Forschungsprojekt **EduCERT (Uni Mannheim)** – Blockchain-
 
 ---
 
-## **7. Warum Akku zu „vielmehr“ passt**
+## **Akku und „vielmehr“**
 
 - Stärkt **soziale Innovation und Nachbarschaftsinitiativen**  
 - Verbindet **lokale Unternehmen, Bürger:innen und Verwaltung**  
@@ -113,7 +174,7 @@ Technologie aus dem Forschungsprojekt **EduCERT (Uni Mannheim)** – Blockchain-
 
 > Akku kann die digitale Infrastruktur des „vielmehr“-Programms ergänzen und erweitern.
 
----
+<!-- ---
 
 ## **8. Pilotprojekt Heidelberg**
 
@@ -126,11 +187,11 @@ Technologie aus dem Forschungsprojekt **EduCERT (Uni Mannheim)** – Blockchain-
 1. **Pilotphase** in zwei Stadtteilen (z. B. Neuenheim, Bahnstadt)  
 2. Kooperation mit **lokalen Läden, NGOs, Studierendeninitiativen**  
 3. **Co-Creation**-Workshops mit Verwaltung und Zivilgesellschaft  
-4. **Evaluation** von sozialer Wirkung & Vertrauen
+4. **Evaluation** von sozialer Wirkung & Vertrauen -->
 
 ---
 
-## **9. Wirkung & Nachhaltigkeit**
+## ** Wirkung & Nachhaltigkeit**
 
 - 🌱 **Wirtschaftlich** – stärkt lokale Betriebe, reduziert Gebühren  
 - 🧑‍🤝‍🧑 **Sozial** – fördert Zusammenhalt und Teilhabe  
@@ -154,8 +215,8 @@ Technologie aus dem Forschungsprojekt **EduCERT (Uni Mannheim)** – Blockchain-
 ## **Kontakt**
 
 **Akku Projektteam**  
-🌐 [akku.city](https://akku.city)  
-✉️ hello@akku.city  
+🌐 [akku.network](https://akku.network)  
+✉️ hello@akku.network  
 
 **Dr. Stefano Balietti**  
 📍 Heidelberg | Civic Tech & Digital Governance  
