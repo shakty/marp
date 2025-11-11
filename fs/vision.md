@@ -131,6 +131,7 @@ style: |
 - Project-based assignments
 - Industry integration
 - Curiosity and passion driven
+- Regular Feedback
 
 
 </div>
